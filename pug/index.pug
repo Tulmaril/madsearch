@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Document
+		link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="css/media.css")
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		
+
+	body.lock
+		//page-wrapper
+		.page-wrapper
+			//Header
+			header.header
+				a.header__menu.menu-toggle(href="javascript:void(0);")
+				.header__menu-nav
+					a.header__menu-close.menu-toggle(href="javascript:void(0);")
+					.header__menu-text Поиск вещей, которые я так давно искал Поиск вещей, которые я потерял Поиск каких-нибудь вещей
+					ul.header__menu-list
+						li.header__menu-item
+							a.header__menu-link.header__menu-about(href="javascript:void(0);") О проекте
+						li.header__menu-item
+							a.header__menu-link.header_menu-callus(href="javascsript:void(0);") Написать нам
+				a.header__mail(href="javascript:void(0);")
+				.header__wave
+
+			//Center
+			.center
+				.center__slogan Найдётся всё
+				a.center__logo(href="javascsript:void(0);")
+					img(src="img/layout/logo.png" alt="MaDSEARCH")
+				form#search
+					input.center__search-input(type="text" name="search" placeholder="Введите то, что так давно искали")
+				.center__buttons
+					button.center__buttons-submit(type="submit" form="#search" name="everywhere" value="") искать везде
+					button.center__buttons-submit(type="submit" form="#search" name="almost_everywhere" value="почти везде") почти везде
+					button.center__buttons-submit(type="submit" form="#search" name="nowhere" value="нигде") нигде
+			.helper
+				.helper__message
+					.helper__message-greeting hi!
+					.helper__message-text Я готов помочь тебе с поиском.
+					a.helper__message-link(href="javascsript:void(0);") Просить помощи
+				.helper__close
+			.buffer
+		//footer
+		footer.footer
+			a.footer__link(href="javascsript:void(0);")
+
+
+
+
+	// Scripts
+
+	script(src="bower/jquery/dist/jquery.min.js")
+	script(src="js/main.js")
